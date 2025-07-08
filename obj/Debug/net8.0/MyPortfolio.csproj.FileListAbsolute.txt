@@ -239,3 +239,4 @@ C:\Users\user\source\repos\MyPortfolio\bin\Debug\net8.0\Microsoft.Extensions.Log
 C:\Users\user\source\repos\MyPortfolio\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 C:\Users\user\source\repos\MyPortfolio\bin\Debug\net8.0\MySqlConnector.dll
 C:\Users\user\source\repos\MyPortfolio\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
+C:\Users\user\source\repos\MyPortfolio\obj\Debug\net8.0\MyPortfolio.sourcelink.json
