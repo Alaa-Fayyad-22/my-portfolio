@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Projects";
+}
+@model List<MyPortfolio.Models.Project>
+
+<div class="container py-5 scroll-up">
+    <h2 class="text-center mb-4">My Projects</h2>
+    <div class="row g-4">
+        @foreach (var project in Model)
+        {
+            <div class="col-md-4 scroll-up">
+                @if (!string.IsNullOrEmpty(project.ProjectURL))
+                {
+                    <a href="@project.ProjectURL" target="_blank" class="text-decoration-none text-reset">
+                        <div class="card h-100">
+                            <img src="@project.ImageUrl" class="card-img-top" alt="@project.Title" />
+                            <div class="card-body">
+                                <h5 class="card-title">@project.Title</h5>
+                                <p class="card-text">@project.Description</p>
+                            </div>
+                        </div>
+                    </a>
+                }
+                else
+                {
+                    <div class="card h-100">
+                        <img src="@project.ImageUrl" class="card-img-top" alt="@project.Title" />
+                        <div class="card-body">
+                            <h5 class="card-title">@project.Title</h5>
+                            <p class="card-text">@project.Description</p>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+</div>

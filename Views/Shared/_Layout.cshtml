@@ -1,0 +1,154 @@
+﻿@{
+    var currentController = ViewContext.RouteData.Values["controller"]?.ToString();
+    var currentAction = ViewContext.RouteData.Values["action"]?.ToString();
+}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewData["Title"] - My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="@Url.Content("~/css/site.css")" />
+
+   
+</head>
+<body class="dark-mode">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
+        <div class="navbar-container">
+            <a class="navbar-brand" href="/">Alaa Fayyad</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <button id="themeToggle" class="btn btn-outline-light ms-2">🌙</button>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link @(currentController == "Home"  ? "active-page" : "")"
+                           asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link @(currentController == "AboutUs"  ? "active-page" : "")"
+                           asp-controller="AboutUs" asp-action="Index">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link @(currentController == "Projects"? "active-page" : "")"
+                           asp-controller="Projects" asp-action="Index">Projects</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link @(currentController == "Contact" && currentAction == "Index" ? "active-page" : "")"
+                           asp-controller="Contact" asp-action="Index">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        @RenderBody()
+    </div>
+
+    @{
+        if (ViewBag.ContactInfo == null)
+        {
+            var db = Context.RequestServices.GetService(typeof(MyPortfolio.Data.ApplicationDbContext)) as MyPortfolio.Data.ApplicationDbContext;
+            ViewBag.ContactInfo = db?.ContactInfos.FirstOrDefault(c => c.Id == 4);
+        }
+    }
+
+    @await Html.PartialAsync("_Footer", (MyPortfolio.Models.ContactInfo)ViewBag.ContactInfo)
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        window.addEventListener('scroll', function () {
+          const navbar = document.querySelector('.navbar');
+          if (window.scrollY > 50) {  // adjust threshold as needed
+            navbar.classList.add('scrolled');
+          } else {
+            navbar.classList.remove('scrolled');
+          }
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                        observer.unobserve(entry.target); // animate once
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+
+            document.querySelectorAll('.scroll-up').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+
+
+    <script>
+        window.addEventListener('scroll', () => {
+          const sections = document.querySelectorAll('section');
+          let scrollPos = window.scrollY || window.pageYOffset;
+
+          sections.forEach(section => {
+            const top = section.offsetTop;
+            const height = section.offsetHeight;
+            const h4 = section.querySelector('h4.section-title, h2.section-title');
+
+            if (!h4) return; // Skip if no matching element
+
+            if (scrollPos >= top - window.innerHeight / 2 && scrollPos < top + height - window.innerHeight / 2) {
+              h4.classList.add('active');
+            } else {
+              h4.classList.remove('active');
+            }
+          });
+        });
+    </script>
+
+    <script>
+        const toggleBtn = document.getElementById('themeToggle');
+        const body = document.body;
+
+        // Load preference from localStorage
+        if (localStorage.getItem('theme') === 'light') {
+            body.classList.remove('dark-mode');
+            body.classList.add('light-mode');
+            toggleBtn.textContent = '🌙';
+        }
+
+        toggleBtn.addEventListener('click', () => {
+            if (body.classList.contains('dark-mode')) {
+                body.classList.remove('dark-mode');
+                body.classList.add('light-mode');
+                toggleBtn.textContent = '🌙';
+                localStorage.setItem('theme', 'light');
+            } else {
+                body.classList.remove('light-mode');
+                body.classList.add('dark-mode');
+                toggleBtn.textContent = '☀️';
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+    </script>
+
+    @RenderSection("Scripts", required: false)
+
+</body>
+</html>

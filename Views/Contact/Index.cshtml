@@ -1,0 +1,102 @@
+﻿@model MyPortfolio.Models.ContactInfo
+@{
+    ViewData["Title"] = "Contact";
+}
+
+<section class="contact-section">
+    <div class="container">
+        <div class="text-center mb-5 scroll-up">
+            <h2 class="display-5 fw-bold text-gold">Let's Connect</h2>
+            <p class="fw-light">Have a project or question? I’d love to hear from you.</p>
+        </div>
+
+        <div class="row scroll-up align-items-center">
+            <!-- Contact Info -->
+            <div class="col-md-5">
+                <div class="contact-info scroll-up">
+                    <h4 class=" mb-4">📬 Reach Me At</h4>
+
+                    <p class="contact-line">
+                        <i class="bi bi-envelope-fill text-gold me-2"></i>
+                        <strong>Email:</strong>
+                        <a href="mailto:@Model.Email">@Model.Email</a>
+                    </p>
+
+                    <p class="contact-line">
+                        <i class="bi bi-telephone-fill text-gold me-2"></i>
+                        <strong>Phone:</strong>
+                        <a href="tel:@Model.Phone">@Model.Phone</a>
+                    </p>
+
+                    <p class="contact-line">
+                        <i class="bi bi-geo-alt-fill text-gold me-2"></i>
+                        <strong>Address:</strong> @Model.Address
+                    </p>
+
+                    @if (!string.IsNullOrEmpty(Model.LinkedIn))
+                    {
+                        <p class="contact-line">
+                            <i class="bi bi-linkedin text-gold me-2"></i>
+                            <strong>LinkedIn:</strong>
+                            <a href="https://www.linkedin.com/in/@Model.LinkedIn" target="_blank">@Model.LinkedIn</a>
+                        </p>
+                    }
+
+                    @if (!string.IsNullOrEmpty(Model.GitHub))
+                    {
+                        <p class="contact-line">
+                            <i class="bi bi-github text-gold me-2"></i>
+                            <strong>GitHub:</strong>
+                            <a href="@Model.GitHub" target="_blank">@Model.GitHub</a>
+                        </p>
+                    }
+                </div>
+            </div>
+            <!-- Contact Form -->
+            <div class="col-md-7">
+                <form asp-action="Index" method="post" id="contactForm">
+                <div class="mb-3">
+                    <label class="form-label">Your Name</label>
+                    <input type="text" class="form-control" name="Name" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Your Email</label>
+                    <input type="email" class="form-control" name="Email" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Message</label>
+                    <textarea class="form-control" name="Message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-gold" id="sendBtn">Submit</button>
+            </form>
+
+           
+            <div id="successMessage" class="alert alert-success mt-3 d-none">
+                @TempData["MessageSent"]
+            </div>
+            </div>
+
+
+            @section Scripts {
+                <script>
+                    document.getElementById("contactForm").addEventListener("submit", function () {
+                        const button = document.getElementById("sendBtn");
+                        button.disabled = true;
+                        button.innerText = "Submitting...";
+
+                        // Let the server process the form, and show success afterward
+                    });
+
+                    // Optional: Hide form if TempData is set (server-side confirmed message)
+                    window.addEventListener('DOMContentLoaded', () => {
+                        const message = "@TempData["MessageSent"]";
+                        if (message) {
+                            document.getElementById("contactForm").style.display = "none";
+                            document.getElementById("successMessage").classList.remove("d-none");
+                        }
+                    });
+                </script>
+            }
+        </div>
+    </div>
+</section>
