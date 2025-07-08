@@ -31,8 +31,9 @@ namespace MyPortfolio
 
             // **Register your DbContext here**
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"),
-                    ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection"))));
+                options.UseNpgsql(connectionString));
+
+
 
             var app = builder.Build();
 
