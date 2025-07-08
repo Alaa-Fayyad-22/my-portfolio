@@ -1,4 +1,4 @@
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -17,6 +17,17 @@ namespace MyPortfolio
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+
+            if (string.IsNullOrWhiteSpace(connectionString))
+            {
+                Console.WriteLine("ERROR: DefaultConnection string is missing.");
+            }
+            else
+            {
+                Console.WriteLine("DefaultConnection loaded.");
+            }
 
             // **Register your DbContext here**
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
