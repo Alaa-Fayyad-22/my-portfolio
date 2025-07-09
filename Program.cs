@@ -31,7 +31,8 @@ namespace MyPortfolio
 
             // **Register your DbContext here**
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseNpgsql(connectionString));
+    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 
 
 
