@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\user\\source\\repos\\MyPortfolio\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5CACACF3-B6AF-462E-BF3A-F3D6E45870F0}|MyPortfolio.csproj|c:\\users\\user\\source\\repos\\myportfolio\\data\\applicationdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5CACACF3-B6AF-462E-BF3A-F3D6E45870F0}|MyPortfolio.csproj|solutionrelative:data\\applicationdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5CACACF3-B6AF-462E-BF3A-F3D6E45870F0}|MyPortfolio.csproj|c:\\users\\user\\source\\repos\\myportfolio\\myportfolio.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{5CACACF3-B6AF-462E-BF3A-F3D6E45870F0}|MyPortfolio.csproj|solutionrelative:myportfolio.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CACACF3-B6AF-462E-BF3A-F3D6E45870F0}|MyPortfolio.csproj|c:\\users\\user\\source\\repos\\myportfolio\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5CACACF3-B6AF-462E-BF3A-F3D6E45870F0}|MyPortfolio.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CACACF3-B6AF-462E-BF3A-F3D6E45870F0}|MyPortfolio.csproj|c:\\users\\user\\source\\repos\\myportfolio\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5CACACF3-B6AF-462E-BF3A-F3D6E45870F0}|MyPortfolio.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5CACACF3-B6AF-462E-BF3A-F3D6E45870F0}|MyPortfolio.csproj|c:\\users\\user\\source\\repos\\myportfolio\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,14 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5CACACF3-B6AF-462E-BF3A-F3D6E45870F0}|MyPortfolio.csproj|c:\\users\\user\\source\\repos\\myportfolio\\models\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5CACACF3-B6AF-462E-BF3A-F3D6E45870F0}|MyPortfolio.csproj|solutionrelative:models\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CACACF3-B6AF-462E-BF3A-F3D6E45870F0}|MyPortfolio.csproj|c:\\users\\user\\source\\repos\\myportfolio\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{5CACACF3-B6AF-462E-BF3A-F3D6E45870F0}|MyPortfolio.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CACACF3-B6AF-462E-BF3A-F3D6E45870F0}|MyPortfolio.csproj|c:\\users\\user\\source\\repos\\myportfolio\\data\\applicationdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5CACACF3-B6AF-462E-BF3A-F3D6E45870F0}|MyPortfolio.csproj|solutionrelative:data\\applicationdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5CACACF3-B6AF-462E-BF3A-F3D6E45870F0}|MyPortfolio.csproj|c:\\users\\user\\source\\repos\\myportfolio\\models\\contactinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -102,37 +106,50 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MyPortfolio",
+              "DocumentIndex": 3,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MyPortfolio\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\MyPortfolio\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-09T10:28:32.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MyPortfolio.csproj",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MyPortfolio\\MyPortfolio.csproj",
               "RelativeDocumentMoniker": "MyPortfolio.csproj",
               "ToolTip": "C:\\Users\\user\\source\\repos\\MyPortfolio\\MyPortfolio.csproj",
               "RelativeToolTip": "MyPortfolio.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-07-09T10:22:06.206Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "ApplicationDbContextFactory.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MyPortfolio\\Data\\ApplicationDbContextFactory.cs",
               "RelativeDocumentMoniker": "Data\\ApplicationDbContextFactory.cs",
               "ToolTip": "C:\\Users\\user\\source\\repos\\MyPortfolio\\Data\\ApplicationDbContextFactory.cs",
               "RelativeToolTip": "Data\\ApplicationDbContextFactory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-08T14:35:41.584Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ContactInfo.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MyPortfolio\\Models\\ContactInfo.cs",
               "RelativeDocumentMoniker": "Models\\ContactInfo.cs",
@@ -144,7 +161,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "ErrorViewModel.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MyPortfolio\\Models\\ErrorViewModel.cs",
               "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
@@ -156,7 +173,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "AboutUs.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MyPortfolio\\Models\\AboutUs.cs",
               "RelativeDocumentMoniker": "Models\\AboutUs.cs",
@@ -168,7 +185,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MyPortfolio\\Views\\AboutUs\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\AboutUs\\Index.cshtml",
@@ -180,7 +197,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ProjectsController.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MyPortfolio\\Controllers\\ProjectsController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProjectsController.cs",
@@ -192,7 +209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ContactController.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MyPortfolio\\Controllers\\ContactController.cs",
               "RelativeDocumentMoniker": "Controllers\\ContactController.cs",
@@ -204,7 +221,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "AboutUsController.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MyPortfolio\\Controllers\\AboutUsController.cs",
               "RelativeDocumentMoniker": "Controllers\\AboutUsController.cs",
@@ -216,7 +233,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MyPortfolio\\Views\\Contact\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Contact\\Create.cshtml",
@@ -228,7 +245,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MyPortfolio\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
@@ -240,7 +257,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MyPortfolio\\Views\\Projects\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Projects\\Index.cshtml",
@@ -252,7 +269,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MyPortfolio\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
@@ -264,7 +281,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "ContactFormModel.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MyPortfolio\\Models\\ContactFormModel.cs",
               "RelativeDocumentMoniker": "Models\\ContactFormModel.cs",
@@ -276,7 +293,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "EmailService.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MyPortfolio\\Services\\EmailService.cs",
               "RelativeDocumentMoniker": "Services\\EmailService.cs",
@@ -288,7 +305,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "_Footer.cshtml",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MyPortfolio\\Views\\Shared\\_Footer.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Footer.cshtml",
@@ -300,20 +317,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MyPortfolio\\appsettings.Development.json",
               "RelativeDocumentMoniker": "appsettings.Development.json",
               "ToolTip": "C:\\Users\\user\\source\\repos\\MyPortfolio\\appsettings.Development.json",
               "RelativeToolTip": "appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-07-05T17:34:08.095Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MyPortfolio\\Views\\Contact\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Contact\\Index.cshtml",
@@ -325,7 +342,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MyPortfolio\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
@@ -337,7 +354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Project.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MyPortfolio\\Models\\Project.cs",
               "RelativeDocumentMoniker": "Models\\Project.cs",
@@ -345,12 +362,11 @@
               "RelativeToolTip": "Models\\Project.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T17:24:41.577Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-05T17:24:41.577Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MyPortfolio\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -358,12 +374,11 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAEwAAAAAAAAAAAAmwHEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T17:30:57.36Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-05T17:30:57.36Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MyPortfolio\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
@@ -375,7 +390,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MyPortfolio\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
