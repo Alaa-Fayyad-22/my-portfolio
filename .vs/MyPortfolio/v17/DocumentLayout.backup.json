@@ -116,7 +116,7 @@
               "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
               "ToolTip": "C:\\Users\\user\\source\\repos\\MyPortfolio\\wwwroot\\css\\site.css",
               "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AgIAAK8BAAAAAAAAAAAAAMUBAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAAwFsAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-07-05T17:03:35.135Z",
               "IsPinned": true,
@@ -312,8 +312,7 @@
               "RelativeToolTip": "Views\\Shared\\_Footer.cshtml",
               "ViewState": "AgIAABgAAAAAAAAAAAAAACEAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-07T14:58:18.572Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-07T14:58:18.572Z"
             },
             {
               "$type": "Document",
@@ -337,8 +336,7 @@
               "RelativeToolTip": "Views\\Contact\\Index.cshtml",
               "ViewState": "AgIAACwAAAAAAAAAAAAiwE4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-05T16:51:25.892Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-05T16:51:25.892Z"
             },
             {
               "$type": "Document",
@@ -348,7 +346,7 @@
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\user\\source\\repos\\MyPortfolio\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABwAAAAAAAAAAAAmwCcAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAAmwCEAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-07-05T16:56:04.536Z",
               "EditorCaption": ""
@@ -399,8 +397,7 @@
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAkAAAAAAAAAAAAiwBYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-05T17:00:43.69Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-05T17:00:43.69Z"
             }
           ]
         }
