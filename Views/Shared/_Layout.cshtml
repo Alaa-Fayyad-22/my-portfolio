@@ -31,14 +31,42 @@
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
         <div class="navbar-container">
             <a class="navbar-brand" href="/">Alaa Fayyad</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="hamburger" id="menuToggle">
+                <span></span><span></span><span></span>
             </button>
 
             <div class="collapse navbar-collapse" id="mainNavbar">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <button id="themeToggle" class="btn btn-outline-light ms-2">🌙</button>
+                        <button id="themeToggleDesktop" class="btn btn-toggle ms-2">🌙</button>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link @(currentController == "Home"  ? "active-page" : "")"
+                           asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link @(currentController == "AboutUs"  ? "active-page" : "")"
+                           asp-controller="AboutUs" asp-action="Index">About</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link @(currentController == "Projects"? "active-page" : "")"
+                           asp-controller="Projects" asp-action="Index">Projects</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link @(currentController == "Contact" && currentAction == "Index" ? "active-page" : "")"
+                           asp-controller="Contact" asp-action="Index">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="overlay" id="overlayMenu">
+                <ul class="overlay-menu">
+                    <li class="nav-item">
+                        <button id="themeToggleMobile" class="btn btn-dark ms-2">🌙</button>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link @(currentController == "Home"  ? "active-page" : "")"
@@ -132,29 +160,47 @@
     </script>
 
     <script>
-        const toggleBtn = document.getElementById('themeToggle');
+        const toggleBtnDesktop = document.getElementById('themeToggleDesktop');
+        const toggleBtnMobile = document.getElementById('themeToggleMobile');
         const body = document.body;
 
-        // Load preference from localStorage
-        if (localStorage.getItem('theme') === 'light') {
+        function toggleTheme() {
+          if (body.classList.contains('dark-mode')) {
             body.classList.remove('dark-mode');
             body.classList.add('light-mode');
-            toggleBtn.textContent = '🌙';
+            toggleBtnDesktop.textContent = '🌙';
+            toggleBtnMobile.textContent = '🌙';
+            localStorage.setItem('theme', 'light');
+          } else {
+            body.classList.remove('light-mode');
+            body.classList.add('dark-mode');
+            toggleBtnDesktop.textContent = '☀️';
+            toggleBtnMobile.textContent = '☀️';
+            localStorage.setItem('theme', 'dark');
+          }
         }
 
-        toggleBtn.addEventListener('click', () => {
-            if (body.classList.contains('dark-mode')) {
-                body.classList.remove('dark-mode');
-                body.classList.add('light-mode');
-                toggleBtn.textContent = '🌙';
-                localStorage.setItem('theme', 'light');
-            } else {
-                body.classList.remove('light-mode');
-                body.classList.add('dark-mode');
-                toggleBtn.textContent = '☀️';
-                localStorage.setItem('theme', 'dark');
-            }
+        toggleBtnDesktop.addEventListener('click', toggleTheme);
+        toggleBtnMobile.addEventListener('click', toggleTheme);
+
+    </script>
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const overlayMenu = document.getElementById('overlayMenu');
+
+        menuToggle.addEventListener('click', () => {
+          overlayMenu.classList.toggle('open');
+          menuToggle.classList.toggle('active'); // toggles hamburger to X and back
         });
+
+
+                const closeOverlay = document.getElementById('closeOverlay');
+        closeOverlay.addEventListener('click', () => {
+          overlayMenu.classList.remove('open');
+          menuToggle.classList.remove('active');
+        });
+
     </script>
 
     @RenderSection("Scripts", required: false)
