@@ -1,55 +1,398 @@
 ﻿@{
     ViewData["Title"] = "Home";
 }
+@model MyPortfolio.Models.HomePageViewModel 
+@using System.Text.Json
 
-<!-- Hero Section -->
-<section class="hero text-light py-5 text-center">
-    <div class="container home-div">
-        <h1 class="display-4 mb-3 fw-bold">Hi, I'm Alaa Fayyad</h1>
-        <p class="lead mb-4">C# & Python Developer based in Beirut — building clean, responsive, and modern web applications.</p>
-        <a href="/Projects" class="btn btn-gold btn-lg">View My Work</a>
+<section class="hero py-5 text-center" data-aos="fade-right">
+    <div class="container">
+        <h1 class="section-title text-gold display-7 mb-5 fw-bold">Hi, I'm Alaa </h1>
+        <h2>Web Developer & Code Craftsman</h2>
+        <h3><i>From brainstorm to browser.</i></h3>
+    </div>
+    <div class="container">
+        <img src="~/images/home-avatar.png" alt="Alaa Fayyad Logo" class="img-fluid logo-image" />
+    </div>
+
+    @* <div class="mt-4 d-flex justify-content-center gap-3"> *@
+    @*     <a href="/projects" class="btn btn-gold btn-lg px-4">View My Work</a> *@
+    @*     <a href="/contact" class="btn btn-dark btn-lg px-4">Get in Touch</a> *@
+    @* </div> *@
+
+</section>
+
+
+    <p class="text-gold text-center">Based in Beirut — fueled by coffee ☕ & clean code.</p>
+
+<section class="hero py-5 text-center glass-effect scroll-up">
+    <div class="container">
+        <div class="row">
+            <!-- Empty Left Column -->
+            <div class="col-md-3 d-none d-md-block"></div>
+
+            <!-- Center Column with Content -->
+            <div class="col-md-6 col-12">
+                <h2 class="display-7 mb-5 fw-bold section-title text-gold">Hi, I’m Alaa Fayyad. Nice to meet you.</h2>
+                <p class="lead mb-4">
+                    Since starting my journey in web development, I’ve maintained and updated websites, built internal tools,
+                    and supported live platforms as part of my role at a software company.
+                    Recently, I’ve also started exploring freelance web development, working to establish my presence and take on new opportunities.
+                </p>
+                
+            </div>
+
+            <!-- Empty Right Column -->
+            <div class="col-md-3 d-none d-md-block"></div>
+        </div>
     </div>
 </section>
 
-<!-- About Section -->
-<section class="scroll-up py-5">
-    <div class="container text-center">
-        <h2 class="text-gold section-title mb-4">About Me</h2>
-        <p class="mx-auto fs-5" style="max-width: 720px;">
-            I'm a passionate software developer with expertise in ASP.NET Core, Python, and modern web technologies.
-            I focus on delivering clean code, intuitive UI/UX, and scalable architecture.
-        </p>
-        <br />
 
-        <a href="/AboutUs" class="btn btn-gold btn-lg">About Me</a>
+<section class="container my-5 cols" data-aos="fade-up">
+    <div class="row text-center p-5 rounded-4 position-relative z-1 cols-info">
+
+        <!-- Python Developer -->
+        <div class="col-md-3 mb-5">
+            <span class="fa-stack fa-2x mb-3">
+                <i class="fas fa-circle fa-stack-2x text-warning"></i>
+                <i class="fas fa-code fa-stack-1x text-dark"></i>
+            </span>
+            <h4 class="fw-bold">Python Developer</h4>
+            <p>
+                I specialize in developing automation tools, building RESTful APIs, and creating dynamic web apps
+                using Python frameworks like <strong>FastAPI</strong> and <strong>Flask</strong>.
+            </p>
+            <p class="mt-3"><strong>Core Skills:</strong></p>
+            <p>Python, FastAPI, Flask, REST APIs, PostgreSQL</p>
+            <p class="mt-3"><strong>Tools & Libraries:</strong></p>
+            <p>Requests, BeautifulSoup, Pandas</p>
+        </div>
+
+        <!-- ASP.NET Web Developer -->
+        <div class="col-md-3 mb-5">
+            <span class="fa-stack fa-2x mb-3">
+                <i class="fas fa-circle fa-stack-2x text-warning"></i>
+                <i class="fas fa-laptop-code fa-stack-1x text-dark"></i>
+            </span>
+            <h4 class="fw-bold">ASP.NET Developer</h4>
+            <p>
+                I build scalable, secure applications with ASP.NET Core and Razor Pages, integrating MySQL or PostgreSQL for data storage.
+            </p>
+            <p class="mt-3"><strong>Technologies:</strong></p>
+            <p>ASP.NET Core MVC, C#, Razor Pages, MySQL/PostgreSQL</p>
+            <p class="mt-3"><strong>Frontend:</strong></p>
+            <p>Bootstrap, JavaScript, jQuery</p>
+        </div>
+
+        <!-- PHP Developer -->
+        <div class="col-md-3 mb-5">
+            <span class="fa-stack fa-2x mb-3">
+                <i class="fas fa-circle fa-stack-2x text-warning"></i>
+                <i class="fas fa-terminal fa-stack-1x text-dark"></i>
+            </span>
+            <h4 class="fw-bold">PHP Developer</h4>
+            <p>
+                I develop robust server-side apps and CMS-driven sites using PHP and Laravel, ensuring performance and clean code.
+            </p>
+            <p class="mt-3"><strong>Languages & Frameworks:</strong></p>
+            <p>PHP, Laravel, MySQL</p>
+            <p class="mt-3"><strong>CMS & Tools:</strong></p>
+            <p>WordPress, Composer, Blade</p>
+        </div>
+
+        <!-- Freelancer -->
+        <div class="col-md-3 mb-5">
+            <span class="fa-stack fa-2x mb-3">
+                <i class="fas fa-circle fa-stack-2x text-warning"></i>
+                <i class="fas fa-rocket fa-stack-1x text-dark"></i>
+            </span>
+            <h4 class="fw-bold">Freelancer</h4>
+            <p>
+                I'm growing my freelance journey by building websites for individuals and small businesses with a strong focus on user experience.
+            </p>
+            <p class="mt-3"><strong>What I Use:</strong></p>
+            <p>HTML, CSS, JavaScript, Git, VS Code</p>
+            <p class="mt-3"><strong>Soft Skills:</strong></p>
+            <p>Client Communication, Time Management, Problem Solving, Attention to Detail</p>
+        </div>
+
     </div>
 </section>
 
-<!-- Skills Section -->
-<section class="skills py-5 scroll-up">
-    <div class="container text-center">
-        <h2 class="text-gold section-title mb-4">Skills & Technologies</h2>
-        <div class="row justify-content-center">
-            <div class="col-md-8 home-div text-start fs-5">
-                <ul class="list-unstyled">
-                    <li>✔️ ASP.NET Core MVC / Razor</li>
-                    <li>✔️ Python (Flask, FastAPI, automation)</li>
-                    <li>✔️ RESTful API Development</li>
-                    <li>✔️ JavaScript, HTML5, CSS3, Bootstrap</li>
-                    <li>✔️ Entity Framework Core / SQL / MySQL</li>
-                    <li>✔️ Git, GitHub, GitLab</li>
-                    <li>✔️ Responsive Design & UI/UX</li>
-                    <li>✔️ Web Scraping, SEO, API Integrations</li>
-                </ul>
+
+<section class="experience-section py-5 " data-aos="fade-up">
+    <div class="container">
+        <h2 class="text-center text-gold section-title mb-5">Experience</h2>
+
+        <div class="timeline-centered position-relative">
+            
+            <div class="timeline-item left " data-aos="fade-right">
+                <div class="content">
+                    <h5 class="fw-bold">January 2025 – Present</h5>
+                    <h4 class="text-gold">Freelance Web Developer</h4>
+                    <p>Worked with individuals and startups to design and launch modern websites.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item right" data-aos="fade-left">
+                <div class="content">
+                    <h5 class="fw-bold">January 2024 – Present</h5>
+                    <h4 class="text-gold">Python Developer – Softech S.A.R.L</h4>
+                    <p>Built automation tools and internal platforms using Python.</p>
+                </div>
+            </div>
+
+            <!-- Timeline Entry 3 -->
+            <div class="timeline-item left" data-aos="fade-right">
+                <div class="content">
+                    <h5 class="fw-bold">March 2023 –  August 2023</h5>
+                    <h4 class="text-gold">C# ASP.NET Developer - Multiframes S.A.R.L.</h4>
+                    <p>Collaborated on front and back end tasks using C# ASP.NET.</p>
+                </div>
             </div>
         </div>
     </div>
 </section>
 
+
+
+@{
+    var jsonOptions = new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase };
+}
+<section class="hero py-5 container scroll-up">
+    <h2 class="text-center text-gold fw-bold mb-4 section-title">&lt;CodeWisdom /&gt;</h2>
+
+    <div class="quote-box text-center my-5 position-relative overflow-hidden" style="height: 120px;">
+        <div id="quote1" class="quote-slide position-absolute w-100"></div>
+        <div id="quote2" class="quote-slide position-absolute w-100 d-none text-gold"></div>
+    </div>
+</section>
+@section Scripts {
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const quotes = @Html.Raw(JsonSerializer.Serialize(Model.QuoteList, new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase }));
+
+            let index = 0;
+            let current = document.getElementById("quote1");
+            let next = document.getElementById("quote2");
+
+            function showQuote(el, quote) {
+                       el.innerHTML = ""; // Clear existing content
+
+            const blockquote = document.createElement("blockquote");
+            blockquote.className = "blockquote fs-4 fw-semibold text-gold";
+            blockquote.textContent = quote.quoteText;
+
+            const footer = document.createElement("blockquote-footer");
+            footer.className = "blockquote-footer mt-2 text-gold";
+            footer.textContent = quote.author;
+
+            el.appendChild(blockquote);
+            el.appendChild(footer);
+
+            }
+
+            function slideQuotes() {
+                let quote = quotes[index];
+                showQuote(next, quote);
+
+                next.classList.remove('d-none');
+                next.classList.remove('slide-out');
+                next.classList.add('slide-in');
+
+                // After a moment, swap visibility
+                setTimeout(() => {
+                    current.classList.remove('show');
+                    current.classList.add('slide-out');
+                    next.classList.remove('slide-in');
+                    next.classList.add('show');
+
+                    // Swap references
+                    [current, next] = [next, current];
+
+                    // Hide the one that just slid out
+                    setTimeout(() => {
+                        next.classList.add('d-none');
+                        next.classList.remove('slide-out');
+                    }, 600);
+
+                }, 10);
+
+                index = (index + 1) % quotes.length;
+            }
+
+            // Initial load
+            showQuote(current, quotes[index]);
+            current.classList.add('show');
+            index++;
+
+            // Start rotation
+            setInterval(slideQuotes, 7000);
+        });
+    </script>
+}
+
+<section class="scroll-up py-5 glass-effect-v2">
+    <div class="container text-center">
+        <h2 class="text-gold section-title mb-4">About Me</h2>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10">
+                <p class="fs-5 text-emphasis">
+                    I’m a web developer passionate about transforming ideas into elegant, high-performance digital experiences. Whether building responsive user interfaces or architecting backend systems, I love working across the stack to craft intuitive, accessible, and reliable web solutions.
+                </p>
+
+                <p class="fs-5 text-emphasis">
+                    Currently, I’m a Python Developer at <strong>Softech S.A.R.L</strong>, where I build automation tools and internal platforms using Django, Flask, and FastAPI. I'm also expanding my skills in <strong>ASP.NET Core MVC</strong>, developing scalable backend systems using C# and SQL technologies.
+                </p>
+
+                <p class="fs-5 text-emphasis">
+                    My journey includes maintaining and enhancing websites for real businesses, and more recently, venturing into freelance work to support individuals and startups. I take pride in writing clean code, solving real problems, and continuously learning best practices.
+                </p>
+
+                <p class="fs-5 text-emphasis">
+                    When I’m not coding, I enjoy exploring tech communities, reading about UI trends, experimenting with design tools, and playing or watching football. I also love walking around Beirut and listening to good music to recharge.
+                </p>
+
+                @* <a href="/AboutUs" class="btn btn-gold btn-lg mt-4">More About Me</a> *@
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container my-5 cols text-center" data-aos="fade-up">
+    <div class="container cols-info-skills">
+        <h2 class="text-gold section-title mb-4">Additional Skills</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+
+            <!-- Example Skill Item -->
+            <div class="col">
+                <div class="skill-box p-3 shadow-sm rounded-4 h-100">
+                    <p class="fs-5 fw-semibold text-uppercase mb-1 text-gold">Microsoft Excel</p>
+                    <p class="text-muted fst-italic small">Advanced</p>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="skill-box p-3 shadow-sm rounded-4 h-100">
+                    <p class="fs-5 fw-semibold text-uppercase mb-1 text-gold">Microsoft Word</p>
+                    <p class="text-muted fst-italic small">Advanced</p>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="skill-box p-3 shadow-sm rounded-4 h-100">
+                    <p class="fs-5 fw-semibold text-uppercase mb-1 text-gold">PowerPoint</p>
+                    <p class="text-muted fst-italic small">Proficient</p>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="skill-box p-3 shadow-sm rounded-4 h-100">
+                    <p class="fs-5 fw-semibold text-uppercase mb-1 text-gold">Adobe Suite</p>
+                    <p class=" fst-italic small">Proficient</p>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="skill-box p-3 shadow-sm rounded-4 h-100">
+                    <p class="fs-5 fw-semibold text-uppercase mb-1 text-gold">French</p>
+                    <p class="text-muted fst-italic small">Mother Tongue</p>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="skill-box p-3 shadow-sm rounded-4 h-100">
+                    <p class="fs-5 fw-semibold text-uppercase mb-1 text-gold">Spanish</p>
+                    <p class="text-muted fst-italic small">Advanced</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+@* <!-- Skills Section --> *@
+@* <section class="skills py-5 scroll-up text-center"> *@
+@*     <div class="container"> *@
+@*     <div class="row row-cols-1 row-cols-md-2 g-4"> *@
+
+@*         <!-- Frontend Enhancements --> *@
+@*         <div class="col"> *@
+@*             <div class="d-flex align-items-center"> *@
+@*                 <i class="fas fa-check-circle text-gold me-2 mt-1"></i> *@
+@*                 <span>Tailwind CSS</span> *@
+@*             </div> *@
+@*         </div> *@
+
+@*         <div class="col"> *@
+@*             <div class="d-flex align-items-start"> *@
+@*                 <i class="fas fa-check-circle text-gold me-2 mt-1"></i> *@
+@*                 <span>React.js (basics and components)</span> *@
+@*             </div> *@
+@*         </div> *@
+
+@*         <!-- Deployment & DevOps --> *@
+@*         <div class="col"> *@
+@*             <div class="d-flex align-items-start"> *@
+@*                 <i class="fas fa-check-circle text-gold me-2 mt-1"></i> *@
+@*                 <span>Linux & SSH for Server Management</span> *@
+@*             </div> *@
+@*         </div> *@
+
+@*         <div class="col"> *@
+@*             <div class="d-flex align-items-start"> *@
+@*                 <i class="fas fa-check-circle text-gold me-2 mt-1"></i> *@
+@*                 <span>Deployment with Vercel / Netlify / Render</span> *@
+@*             </div> *@
+@*         </div> *@
+
+@*         <!-- Productivity / Versioning --> *@
+@*         <div class="col"> *@
+@*             <div class="d-flex align-items-start"> *@
+@*                 <i class="fas fa-check-circle text-gold me-2 mt-1"></i> *@
+@*                 <span>Agile / Scrum Basics</span> *@
+@*             </div> *@
+@*         </div> *@
+
+@*         <div class="col"> *@
+@*             <div class="d-flex align-items-start"> *@
+@*                 <i class="fas fa-check-circle text-gold me-2 mt-1"></i> *@
+@*                 <span>Visual Studio / VS Code Proficiency</span> *@
+@*             </div> *@
+@*         </div> *@
+
+@*         <!-- Extra Tools --> *@
+@*         <div class="col"> *@
+@*             <div class="d-flex align-items-start"> *@
+@*                 <i class="fas fa-check-circle text-gold me-2 mt-1"></i> *@
+@*                 <span>Figma for UI Collaboration</span> *@
+@*             </div> *@
+@*         </div> *@
+
+@*         <div class="col"> *@
+@*             <div class="d-flex align-items-start"> *@
+@*                 <i class="fas fa-check-circle text-gold me-2 mt-1"></i> *@
+@*                 <span>SEO Optimization Techniques</span> *@
+@*             </div> *@
+@*         </div> *@
+
+@*     </div> *@
+@*     </div> *@
+
+@* </section> *@
+
+
 <!-- Call To Action Section -->
 <section class="cta text-center py-5 scroll-up">
     <div class="container">
-        <h2 class="text-gold mb-4 section-title">Interested in working together?</h2>
+        <h2 class="text-gold mb-3 section-title">
+            Interested in working together?
+        </h2>
+        <p class="mb-4">
+            Let’s bring your ideas to life — from concept to fully deployed web solution.
+        </p>
         <a href="/Contact" class="btn btn-gold btn-lg">Get In Touch</a>
     </div>
 </section>

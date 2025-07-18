@@ -17,6 +17,62 @@
       "PackagePath": "staticwebassets\\files\\Alaa_Fayyad_Resume.docx"
     },
     {
+      "Id": "C:\\Users\\user\\source\\repos\\MyPortfolio\\wwwroot\\images\\avatar-2.png",
+      "PackagePath": "staticwebassets\\images\\avatar-2.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\MyPortfolio\\wwwroot\\images\\avatar-3.png",
+      "PackagePath": "staticwebassets\\images\\avatar-3.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\MyPortfolio\\wwwroot\\images\\avatar-4.png",
+      "PackagePath": "staticwebassets\\images\\avatar-4.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\MyPortfolio\\wwwroot\\images\\avatar.png",
+      "PackagePath": "staticwebassets\\images\\avatar.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\MyPortfolio\\wwwroot\\images\\brightness-high.svg",
+      "PackagePath": "staticwebassets\\images\\brightness-high.svg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\MyPortfolio\\wwwroot\\images\\hero-devices.svg",
+      "PackagePath": "staticwebassets\\images\\hero-devices.svg"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\MyPortfolio\\wwwroot\\images\\home-avatar.png",
+      "PackagePath": "staticwebassets\\images\\home-avatar.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\MyPortfolio\\wwwroot\\images\\light-mode-icon.png",
+      "PackagePath": "staticwebassets\\images\\light-mode-icon.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\MyPortfolio\\wwwroot\\images\\light.png",
+      "PackagePath": "staticwebassets\\images\\light.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\MyPortfolio\\wwwroot\\images\\logo-2.png",
+      "PackagePath": "staticwebassets\\images\\logo-2.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\MyPortfolio\\wwwroot\\images\\logo-3.png",
+      "PackagePath": "staticwebassets\\images\\logo-3.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\MyPortfolio\\wwwroot\\images\\logo-4.png",
+      "PackagePath": "staticwebassets\\images\\logo-4.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\MyPortfolio\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\MyPortfolio\\wwwroot\\images\\night-mode.png",
+      "PackagePath": "staticwebassets\\images\\night-mode.png"
+    },
+    {
       "Id": "C:\\Users\\user\\source\\repos\\MyPortfolio\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

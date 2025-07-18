@@ -11,6 +11,8 @@ namespace MyPortfolio.Data
         public DbSet<Project> Projects { get; set; }
         public DbSet<ContactInfo> ContactInfos { get; set; }
         public DbSet<AboutUs> AboutUs { get; set; }
+        public DbSet<WorkKnowledge> WorkKnowledge { get; set; }
+        public DbSet<Quote> Quotes { get; set; }
 
     }
 }

@@ -2,8 +2,8 @@
     ViewData["Title"] = "Projects";
 }
 @model List<MyPortfolio.Models.Project>
-
-<div class="container py-5 scroll-up">
+<section class="hero py-5 scroll-up">
+<div class="container ">
     <h2 class="text-center mb-4">My Projects</h2>
     <div class="row g-4">
         @foreach (var project in Model)
@@ -35,3 +35,4 @@
         }
     </div>
 </div>
+</section>

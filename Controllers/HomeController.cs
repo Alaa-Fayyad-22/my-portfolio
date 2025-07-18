@@ -20,7 +20,16 @@ namespace MyPortfolio.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var workKnowledgeList = _context.WorkKnowledge.ToList();
+            var quoteList = _context.Quotes.ToList(); // if needed
+
+            var viewModel = new HomePageViewModel
+            {
+                WorkKnowledgeList = workKnowledgeList,
+                QuoteList = quoteList
+            };
+
+            return View(viewModel);
         }
 
         public IActionResult Privacy()

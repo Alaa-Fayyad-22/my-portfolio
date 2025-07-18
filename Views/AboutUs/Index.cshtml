@@ -5,7 +5,7 @@
 @model List<MyPortfolio.Models.AboutUs>
 
 
-<section class="about-section">
+<section class="hero py-5 about-section">
     <div class="container">
         <!-- Intro -->
         <div class="text-center mb-5 scroll-up">
@@ -33,7 +33,7 @@
             </div>
         </div>
 
-        <!-- Skills -->
+        <!-- Skills --> 
         <section id="skills">
         <div class="scroll-up mt-5">
             <h4 class="text-gold mb-3 text-center section-title">Skills & Technologies</h4>
@@ -60,16 +60,20 @@
 
         <!-- Experience Summary -->
         <section id="experience">
-        <div class="scroll-up mb-5">
+        <div class="scroll-up mb-5 py-5">
             <h4 class="text-gold mb-3 text-center section-title">Professional Experience</h4>
             @foreach (var project in Model)
             {
-                <div class="">
+                <ul class="list-unstyled">
+               <li class="mb-2">
+                <div class="experience">
                     <p><strong>🛠️ @project.JobTitle</strong> — @project.Company (@project.Duration)</p>
                 <p>
                     @project.Description
                 </p>
             </div>
+            </li>
+            </ul>
             }
         </div>
         </section>
