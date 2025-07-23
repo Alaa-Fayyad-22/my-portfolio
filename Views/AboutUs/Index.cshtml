@@ -16,7 +16,15 @@
         <div class="row align-items-center mb-5">
             <!-- Image -->
             <div class="col-md-5 text-center scroll-up">
-                <img src="/images/profile.png" class="img-fluid rounded-circle shadow-lg" alt="Alaa Fayyad" style="max-height: 300px;">
+                <div class="col-md-5 text-center scroll-up">
+                    <lottie-player src="https://lottie.host/3ca38634-cf13-489d-b5a2-caeee6e8896f/rqjD9eLKVC.json"
+                                   background="transparent"
+                                   speed="1"
+                                   style="width: 300px; height: 300px;"
+                                   loop
+                                   autoplay>
+                    </lottie-player>
+                </div>
             </div>
 
             <!-- Bio -->
@@ -28,63 +36,63 @@
                 <p class="">
                     I enjoy solving complex problems and collaborating on meaningful projects. My background in business computing allows me to approach software not just technically, but strategically.
                 </p>
-                <a href="/files/Alaa_Fayyad_Resume.docx" class="btn btn-gold me-3 mt-3" target="_blank">📄 Download CV</a>
+                <a href="/files/Alaa_Fayyad_Resume.pdf" class="btn btn-gold me-3 mt-3" target="_blank">📄 View CV</a>
                 <a href="/Contact" class="btn btn-dark mt-3">Contact Me</a>
             </div>
         </div>
 
-        <!-- Skills --> 
+        <!-- Skills -->
         <section id="skills">
-        <div class="scroll-up mt-5">
-            <h4 class="text-gold mb-3 text-center section-title">Skills & Technologies</h4>
-            <ul class="list-unstyled">
-                <li class="mb-2">
-                    <strong class="text-gold">🧠 Languages & Frameworks:</strong>
-                    Python (Flask, FastAPI), C#, ASP.NET Core
-                </li>
-                <li class="mb-2">
-                    <strong class="text-gold">🧰 Tools & Technologies:</strong>
-                    Git, SQL, Bootstrap, REST APIs
-                </li>
-                <li class="mb-2">
-                    <strong class="text-gold">🎨 Front-End:</strong>
-                    Razor, JavaScript, HTML5/CSS3, UI/UX
-                </li>
-                <li class="mb-2">
-                    <strong class="text-gold">⚙️ Other:</strong>
-                    Web scraping, SEO, Automation
-                </li>
-            </ul>
-        </div>
+            <div class="scroll-up mt-5">
+                <h4 class="text-gold mb-3 text-center section-title">Skills & Technologies</h4>
+                <ul class="list-unstyled">
+                    <li class="mb-2" data-aos="fade-right">
+                        <strong class="text-gold">🧠 Languages & Frameworks:</strong>
+                        Python (Flask, FastAPI), C#, ASP.NET Core
+                    </li>
+                    <li class="mb-2" data-aos="fade-left">
+                        <strong class="text-gold">🧰 Tools & Technologies:</strong>
+                        Git, SQL, Bootstrap, REST APIs
+                    </li>
+                    <li class="mb-2" data-aos="fade-right">
+                        <strong class="text-gold">🎨 Front-End:</strong>
+                        Razor, JavaScript, HTML5/CSS3, UI/UX
+                    </li>
+                    <li class="mb-2" data-aos="fade-left">
+                        <strong class="text-gold">⚙️ Other:</strong>
+                        Web scraping, SEO, Automation
+                    </li>
+                </ul>
+            </div>
         </section>
 
         <!-- Experience Summary -->
         <section id="experience">
-        <div class="scroll-up mb-5 py-5">
-            <h4 class="text-gold mb-3 text-center section-title">Professional Experience</h4>
-            @foreach (var project in Model)
-            {
-                <ul class="list-unstyled">
-               <li class="mb-2">
-                <div class="experience">
-                    <p><strong>🛠️ @project.JobTitle</strong> — @project.Company (@project.Duration)</p>
-                <p>
-                    @project.Description
-                </p>
+            <div class="scroll-up mb-5 py-5">
+                <h4 class="text-gold mb-3 text-center section-title">Professional Experience</h4>
+                @foreach (var project in Model)
+                {
+                    <ul class="list-unstyled">
+                        <li class="mb-2" data-aos="fade-right">
+                            <div class="experience">
+                                <p><strong>🛠️ @project.JobTitle</strong> — @project.Company (@project.Duration)</p>
+                                <p>
+                                    @project.Description
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                }
             </div>
-            </li>
-            </ul>
-            }
-        </div>
         </section>
 
         <!-- Call to Action -->
         <section id="projects">
-        <div class="text-center mt-5 scroll-up">
-            <h4 class="section-title">Want to explore my work?</h4>
-            <a href="/Projects" class="btn btn-gold mt-3 me-3">💼 View My Projects</a>
-            <a href="/Contact" class="btn btn-dark mt-3">📬 Contact Me</a>
-        </div>
+            <div class="text-center mt-5 scroll-up">
+                <h4 class="section-title">Want to explore my work?</h4>
+                <a href="/Projects" class="btn btn-gold mt-3 me-3">💼 View My Projects</a>
+                <a href="/Contact" class="btn btn-dark mt-3">📬 Contact Me</a>
+            </div>
         </section>
 
     </div>

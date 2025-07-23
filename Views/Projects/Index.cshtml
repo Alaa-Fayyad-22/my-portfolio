@@ -5,34 +5,51 @@
 <section class="hero py-5 scroll-up">
 <div class="container ">
     <h2 class="text-center mb-4">My Projects</h2>
-    <div class="row g-4">
-        @foreach (var project in Model)
-        {
-            <div class="col-md-4 scroll-up">
-                @if (!string.IsNullOrEmpty(project.ProjectURL))
+        <div class="row g-4">
+            @if (Model != null && Model.Any())
+            {
+                foreach (var project in Model)
                 {
-                    <a href="@project.ProjectURL" target="_blank" class="text-decoration-none text-reset">
-                        <div class="card h-100">
-                            <img src="@project.ImageUrl" class="card-img-top" alt="@project.Title" />
-                            <div class="card-body">
-                                <h5 class="card-title">@project.Title</h5>
-                                <p class="card-text">@project.Description</p>
+                    <div class="col-md-4 scroll-up">
+                        @if (!string.IsNullOrEmpty(project.ProjectURL))
+                        {
+                            <a href="@project.ProjectURL" target="_blank" class="text-decoration-none text-reset">
+                                <div class="card h-100">
+                                    <img src="@project.ImageUrl" class="card-img-top" alt="@project.Title" />
+                                    <div class="card-body">
+                                        <h5 class="card-title">@project.Title</h5>
+                                        <p class="card-text">@project.Description</p>
+                                    </div>
+                                </div>
+                            </a>
+                        }
+                        else
+                        {
+                            <div class="card h-100">
+                                <img src="@project.ImageUrl" class="card-img-top" alt="@project.Title" />
+                                <div class="card-body">
+                                    <h5 class="card-title">@project.Title</h5>
+                                    <p class="card-text">@project.Description</p>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-                }
-                else
-                {
-                    <div class="card h-100">
-                        <img src="@project.ImageUrl" class="card-img-top" alt="@project.Title" />
-                        <div class="card-body">
-                            <h5 class="card-title">@project.Title</h5>
-                            <p class="card-text">@project.Description</p>
-                        </div>
+                        }
                     </div>
                 }
-            </div>
-        }
-    </div>
+            }
+            else
+            {
+                <div class="empty-state text-center py-5">
+                    <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_AQcLsD.json"
+                                   background="transparent"
+                                   speed="1"
+                                   loop
+                                   autoplay
+                                   style="width:300px; max-width: 80%; margin:auto;">
+                    </lottie-player>
+                    <h3 class="mt-4">Exciting things are coming soon… 🚀</h3>
+                    <p>We're crafting something awesome. Stay tuned!</p>
+                </div>
+            }
+        </div>
 </div>
 </section>
