@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\files\\Alaa_Fayyad_Resume.docx"
     },
     {
+      "Id": "C:\\Users\\user\\source\\repos\\MyPortfolio\\wwwroot\\files\\Alaa_Fayyad_Resume.pdf",
+      "PackagePath": "staticwebassets\\files\\Alaa_Fayyad_Resume.pdf"
+    },
+    {
       "Id": "C:\\Users\\user\\source\\repos\\MyPortfolio\\wwwroot\\images\\avatar-2.png",
       "PackagePath": "staticwebassets\\images\\avatar-2.png"
     },
@@ -71,6 +75,10 @@
     {
       "Id": "C:\\Users\\user\\source\\repos\\MyPortfolio\\wwwroot\\images\\night-mode.png",
       "PackagePath": "staticwebassets\\images\\night-mode.png"
+    },
+    {
+      "Id": "C:\\Users\\user\\source\\repos\\MyPortfolio\\wwwroot\\images\\portfolio-profile.png",
+      "PackagePath": "staticwebassets\\images\\portfolio-profile.png"
     },
     {
       "Id": "C:\\Users\\user\\source\\repos\\MyPortfolio\\wwwroot\\js\\site.js",

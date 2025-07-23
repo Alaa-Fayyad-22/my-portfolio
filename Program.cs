@@ -2,7 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
-using MyPortfolio.Data; // Your namespace for ApplicationDbContext
+using MyPortfolio.Data;
 
 namespace MyPortfolio
 {
@@ -14,8 +14,6 @@ namespace MyPortfolio
 
             builder.Services.AddScoped<EmailService>();
 
-
-            // Add services to the container.
             builder.Services.AddControllersWithViews();
 
             var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
@@ -29,16 +27,11 @@ namespace MyPortfolio
                 Console.WriteLine("DefaultConnection loaded.");
             }
 
-            // **Register your DbContext here**
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
-
-
-
+                options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
             var app = builder.Build();
 
-            // Configure the HTTP request pipeline.
             if (!app.Environment.IsDevelopment())
             {
                 app.UseExceptionHandler("/Home/Error");
@@ -46,10 +39,46 @@ namespace MyPortfolio
             }
 
             app.UseHttpsRedirection();
-            app.UseStaticFiles();
+
+            // Add essential security headers
+            app.Use(async (context, next) =>
+            {
+                context.Response.Headers.Add("X-Content-Type-Options", "nosniff");
+                context.Response.Headers.Add("X-Frame-Options", "DENY");
+                context.Response.Headers.Add("X-XSS-Protection", "1; mode=block");
+                await next();
+            });
+
+            // Add improved CSP that allows external fonts, scripts, styles and Lottie files
+            app.Use(async (context, next) =>
+            {
+                context.Response.Headers.Add("Content-Security-Policy",
+                    "default-src 'self'; " +
+                    "script-src 'self' 'unsafe-inline' https://unpkg.com https://cdn.jsdelivr.net https://*.lottiefiles.com; " +
+                    "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; " +
+                    "font-src 'self' https://fonts.gstatic.com; " +
+                    "img-src 'self' data: https://*.lottiefiles.com https://lottie.host; " +
+                    "frame-src 'self' https://*.lottiefiles.com https://lottie.host; " + // required for <lottie-player>
+                    "connect-src 'self' https://*.lottiefiles.com https://lottie.host;");
+                await next();
+            });
+
+
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                OnPrepareResponse = ctx =>
+                {
+                    var ext = Path.GetExtension(ctx.File.Name);
+                    if (ext == ".cshtml" || ext == ".config")
+                    {
+                        ctx.Context.Response.StatusCode = 403;
+                        ctx.Context.Response.ContentLength = 0;
+                        ctx.Context.Response.Body = Stream.Null;
+                    }
+                }
+            });
 
             app.UseRouting();
-
             app.UseAuthorization();
 
             app.MapControllerRoute(
@@ -105,7 +134,6 @@ namespace MyPortfolio
                     Console.WriteLine($"Error seeding database: {ex.Message}");
                 }
             }
-
 
             app.Run();
         }

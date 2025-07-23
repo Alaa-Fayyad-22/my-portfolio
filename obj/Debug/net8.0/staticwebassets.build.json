@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YlCgKeGPnseLAH/GRoH06+GSWq1ZZNfxzvzjvgE10+k=",
+  "Hash": "cXqcEf1xPr5trNN1sVhRMKtCuDnhmGqEsYlWEuJI0CU=",
   "Source": "MyPortfolio",
   "BasePath": "_content/MyPortfolio",
   "Mode": "Default",
@@ -73,8 +73,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "m8q18n34i4",
-      "Integrity": "6tAk0F8af+X9AXM3M31q6YF1rSm/+SjZW29cp/ZZ66g=",
+      "Fingerprint": "k2qw5at16w",
+      "Integrity": "BBfF8IK9HaXPCZ/SObpQZJ4o3g1iCmhO9ko8eEGB1bA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -120,6 +120,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\files\\Alaa_Fayyad_Resume.docx"
+    },
+    {
+      "Identity": "C:\\Users\\user\\source\\repos\\MyPortfolio\\wwwroot\\files\\Alaa_Fayyad_Resume.pdf",
+      "SourceId": "MyPortfolio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\source\\repos\\MyPortfolio\\wwwroot\\",
+      "BasePath": "_content/MyPortfolio",
+      "RelativePath": "files/Alaa_Fayyad_Resume#[.{fingerprint}]?.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "crwpt6bppx",
+      "Integrity": "GHfgnyiHoMAt2KZaTCG2fCmqXvIPADfKcNvMz735P80=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\Alaa_Fayyad_Resume.pdf"
     },
     {
       "Identity": "C:\\Users\\user\\source\\repos\\MyPortfolio\\wwwroot\\images\\avatar.png",
@@ -414,6 +435,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\night-mode.png"
+    },
+    {
+      "Identity": "C:\\Users\\user\\source\\repos\\MyPortfolio\\wwwroot\\images\\portfolio-profile.png",
+      "SourceId": "MyPortfolio",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\source\\repos\\MyPortfolio\\wwwroot\\",
+      "BasePath": "_content/MyPortfolio",
+      "RelativePath": "images/portfolio-profile#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ne6d69told",
+      "Integrity": "r7vWPIR1ETRiSBz79hIKe7+cjKZheYXDgu8p0+afFQo=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\portfolio-profile.png"
     },
     {
       "Identity": "C:\\Users\\user\\source\\repos\\MyPortfolio\\wwwroot\\js\\site.js",
@@ -1646,7 +1688,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "16999"
+          "Value": "17349"
         },
         {
           "Name": "Content-Type",
@@ -1654,11 +1696,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"6tAk0F8af+X9AXM3M31q6YF1rSm/+SjZW29cp/ZZ66g=\""
+          "Value": "\"BBfF8IK9HaXPCZ/SObpQZJ4o3g1iCmhO9ko8eEGB1bA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 18 Jul 2025 13:49:46 GMT"
+          "Value": "Wed, 23 Jul 2025 13:34:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1668,12 +1710,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-6tAk0F8af+X9AXM3M31q6YF1rSm/+SjZW29cp/ZZ66g="
+          "Value": "sha256-BBfF8IK9HaXPCZ/SObpQZJ4o3g1iCmhO9ko8eEGB1bA="
         }
       ]
     },
     {
-      "Route": "css/site.m8q18n34i4.css",
+      "Route": "css/site.k2qw5at16w.css",
       "AssetFile": "C:\\Users\\user\\source\\repos\\MyPortfolio\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1683,7 +1725,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "16999"
+          "Value": "17349"
         },
         {
           "Name": "Content-Type",
@@ -1691,11 +1733,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"6tAk0F8af+X9AXM3M31q6YF1rSm/+SjZW29cp/ZZ66g=\""
+          "Value": "\"BBfF8IK9HaXPCZ/SObpQZJ4o3g1iCmhO9ko8eEGB1bA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 18 Jul 2025 13:49:46 GMT"
+          "Value": "Wed, 23 Jul 2025 13:34:58 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1705,7 +1747,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "m8q18n34i4"
+          "Value": "k2qw5at16w"
         },
         {
           "Name": "label",
@@ -1713,7 +1755,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-6tAk0F8af+X9AXM3M31q6YF1rSm/+SjZW29cp/ZZ66g="
+          "Value": "sha256-BBfF8IK9HaXPCZ/SObpQZJ4o3g1iCmhO9ko8eEGB1bA="
         }
       ]
     },
@@ -1800,6 +1842,51 @@
       ]
     },
     {
+      "Route": "files/Alaa_Fayyad_Resume.crwpt6bppx.pdf",
+      "AssetFile": "C:\\Users\\user\\source\\repos\\MyPortfolio\\wwwroot\\files\\Alaa_Fayyad_Resume.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "122631"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GHfgnyiHoMAt2KZaTCG2fCmqXvIPADfKcNvMz735P80=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Jul 2025 00:37:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "crwpt6bppx"
+        },
+        {
+          "Name": "label",
+          "Value": "files/Alaa_Fayyad_Resume.pdf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GHfgnyiHoMAt2KZaTCG2fCmqXvIPADfKcNvMz735P80="
+        }
+      ]
+    },
+    {
       "Route": "files/Alaa_Fayyad_Resume.docx",
       "AssetFile": "C:\\Users\\user\\source\\repos\\MyPortfolio\\wwwroot\\files\\Alaa_Fayyad_Resume.docx",
       "Selectors": [],
@@ -1878,6 +1965,43 @@
         {
           "Name": "integrity",
           "Value": "sha256-aoh8SCNE8SFspa2MktmgYmf7cYOnRqINsRoZTWS0XCc="
+        }
+      ]
+    },
+    {
+      "Route": "files/Alaa_Fayyad_Resume.pdf",
+      "AssetFile": "C:\\Users\\user\\source\\repos\\MyPortfolio\\wwwroot\\files\\Alaa_Fayyad_Resume.pdf",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "122631"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/pdf"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GHfgnyiHoMAt2KZaTCG2fCmqXvIPADfKcNvMz735P80=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Jul 2025 00:37:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GHfgnyiHoMAt2KZaTCG2fCmqXvIPADfKcNvMz735P80="
         }
       ]
     },
@@ -3026,6 +3150,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-XUrOAYOXrJLqj1hR9SRaapGnTIozyaIP1aoJSTdIWMs="
+        }
+      ]
+    },
+    {
+      "Route": "images/portfolio-profile.ne6d69told.png",
+      "AssetFile": "C:\\Users\\user\\source\\repos\\MyPortfolio\\wwwroot\\images\\portfolio-profile.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1881198"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"r7vWPIR1ETRiSBz79hIKe7+cjKZheYXDgu8p0+afFQo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Jul 2025 01:09:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ne6d69told"
+        },
+        {
+          "Name": "label",
+          "Value": "images/portfolio-profile.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-r7vWPIR1ETRiSBz79hIKe7+cjKZheYXDgu8p0+afFQo="
+        }
+      ]
+    },
+    {
+      "Route": "images/portfolio-profile.png",
+      "AssetFile": "C:\\Users\\user\\source\\repos\\MyPortfolio\\wwwroot\\images\\portfolio-profile.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1881198"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"r7vWPIR1ETRiSBz79hIKe7+cjKZheYXDgu8p0+afFQo=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Jul 2025 01:09:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-r7vWPIR1ETRiSBz79hIKe7+cjKZheYXDgu8p0+afFQo="
         }
       ]
     },
@@ -7808,7 +8014,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 08 Jul 2025 14:38:57 GMT"
+          "Value": "Mon, 21 Jul 2025 09:14:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7853,7 +8059,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 08 Jul 2025 14:38:57 GMT"
+          "Value": "Mon, 21 Jul 2025 09:14:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7898,7 +8104,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 08 Jul 2025 14:38:57 GMT"
+          "Value": "Mon, 21 Jul 2025 09:14:38 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7935,7 +8141,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 08 Jul 2025 14:38:57 GMT"
+          "Value": "Mon, 21 Jul 2025 09:14:38 GMT"
         },
         {
           "Name": "Cache-Control",

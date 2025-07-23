@@ -1,6 +1,7 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\files\Alaa_Fayyad_Resume.docx
+wwwroot\files\Alaa_Fayyad_Resume.pdf
 wwwroot\images\avatar.png
 wwwroot\images\avatar-2.png
 wwwroot\images\avatar-3.png
@@ -15,6 +16,7 @@ wwwroot\images\logo-2.png
 wwwroot\images\logo-3.png
 wwwroot\images\logo-4.png
 wwwroot\images\night-mode.png
+wwwroot\images\portfolio-profile.png
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
