@@ -56,12 +56,13 @@ namespace MyPortfolio
                     "default-src 'self'; " +
                     "script-src 'self' 'unsafe-inline' https://unpkg.com https://cdn.jsdelivr.net https://*.lottiefiles.com; " +
                     "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; " +
-                    "font-src 'self' https://fonts.gstatic.com; " +
+                    "font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net; " + // <-- added cdn.jsdelivr.net here
                     "img-src 'self' data: https://*.lottiefiles.com https://lottie.host; " +
-                    "frame-src 'self' https://*.lottiefiles.com https://lottie.host; " + // required for <lottie-player>
+                    "frame-src 'self' https://*.lottiefiles.com https://lottie.host; " +
                     "connect-src 'self' https://*.lottiefiles.com https://lottie.host;");
                 await next();
             });
+
 
 
             app.UseStaticFiles(new StaticFileOptions
@@ -134,6 +135,9 @@ namespace MyPortfolio
                     Console.WriteLine($"Error seeding database: {ex.Message}");
                 }
             }
+
+            Console.WriteLine("DefaultConnection: " + Environment.GetEnvironmentVariable("DefaultConnection"));
+
 
             app.Run();
         }

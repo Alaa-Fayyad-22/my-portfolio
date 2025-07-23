@@ -7,6 +7,14 @@
       "RelativeMoniker": "D:0:0:{5CACACF3-B6AF-462E-BF3A-F3D6E45870F0}|MyPortfolio.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{5CACACF3-B6AF-462E-BF3A-F3D6E45870F0}|MyPortfolio.csproj|c:\\users\\user\\source\\repos\\myportfolio\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5CACACF3-B6AF-462E-BF3A-F3D6E45870F0}|MyPortfolio.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5CACACF3-B6AF-462E-BF3A-F3D6E45870F0}|MyPortfolio.csproj|c:\\users\\user\\source\\repos\\myportfolio\\views\\shared\\_footer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{5CACACF3-B6AF-462E-BF3A-F3D6E45870F0}|MyPortfolio.csproj|solutionrelative:views\\shared\\_footer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5CACACF3-B6AF-462E-BF3A-F3D6E45870F0}|MyPortfolio.csproj|c:\\users\\user\\source\\repos\\myportfolio\\views\\aboutus\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{5CACACF3-B6AF-462E-BF3A-F3D6E45870F0}|MyPortfolio.csproj|solutionrelative:views\\aboutus\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -25,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5CACACF3-B6AF-462E-BF3A-F3D6E45870F0}|MyPortfolio.csproj|c:\\users\\user\\source\\repos\\myportfolio\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5CACACF3-B6AF-462E-BF3A-F3D6E45870F0}|MyPortfolio.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CACACF3-B6AF-462E-BF3A-F3D6E45870F0}|MyPortfolio.csproj|c:\\users\\user\\source\\repos\\myportfolio\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{5CACACF3-B6AF-462E-BF3A-F3D6E45870F0}|MyPortfolio.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5CACACF3-B6AF-462E-BF3A-F3D6E45870F0}|MyPortfolio.csproj|c:\\users\\user\\source\\repos\\myportfolio\\models\\contactformmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -61,10 +65,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{5CACACF3-B6AF-462E-BF3A-F3D6E45870F0}|MyPortfolio.csproj|c:\\users\\user\\source\\repos\\myportfolio\\controllers\\projectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5CACACF3-B6AF-462E-BF3A-F3D6E45870F0}|MyPortfolio.csproj|solutionrelative:controllers\\projectscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5CACACF3-B6AF-462E-BF3A-F3D6E45870F0}|MyPortfolio.csproj|c:\\users\\user\\source\\repos\\myportfolio\\views\\shared\\_footer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{5CACACF3-B6AF-462E-BF3A-F3D6E45870F0}|MyPortfolio.csproj|solutionrelative:views\\shared\\_footer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5CACACF3-B6AF-462E-BF3A-F3D6E45870F0}|MyPortfolio.csproj|c:\\users\\user\\source\\repos\\myportfolio\\models\\aboutus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -126,7 +126,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MyPortfolio\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
@@ -139,7 +139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MyPortfolio\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
@@ -223,7 +223,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "ContactInfo.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MyPortfolio\\Models\\ContactInfo.cs",
               "RelativeDocumentMoniker": "Models\\ContactInfo.cs",
@@ -231,8 +231,7 @@
               "RelativeToolTip": "Models\\ContactInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-08T09:51:52.404Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-08T09:51:52.404Z"
             },
             {
               "$type": "Document",
@@ -248,7 +247,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MyPortfolio\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
@@ -260,7 +259,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MyPortfolio\\Views\\AboutUs\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\AboutUs\\Index.cshtml",
@@ -268,12 +267,11 @@
               "RelativeToolTip": "Views\\AboutUs\\Index.cshtml",
               "ViewState": "AgIAAA4AAAAAMzMzMzMbwBoAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-05T16:57:32.612Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-05T16:57:32.612Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "ProjectsController.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MyPortfolio\\Controllers\\ProjectsController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProjectsController.cs",
@@ -285,7 +283,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ContactFormModel.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MyPortfolio\\Models\\ContactFormModel.cs",
               "RelativeDocumentMoniker": "Models\\ContactFormModel.cs",
@@ -293,8 +291,7 @@
               "RelativeToolTip": "Models\\ContactFormModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-07T07:45:21.389Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-07T07:45:21.389Z"
             },
             {
               "$type": "Document",
@@ -310,7 +307,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "ContactController.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MyPortfolio\\Controllers\\ContactController.cs",
               "RelativeDocumentMoniker": "Controllers\\ContactController.cs",
@@ -318,8 +315,7 @@
               "RelativeToolTip": "Controllers\\ContactController.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAA5wC8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T23:21:47.286Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-05T23:21:47.286Z"
             },
             {
               "$type": "Document",
@@ -347,7 +343,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MyPortfolio\\Views\\Projects\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Projects\\Index.cshtml",
@@ -355,12 +351,11 @@
               "RelativeToolTip": "Views\\Projects\\Index.cshtml",
               "ViewState": "AgIAACIAAAAAAAAAAAAAACkAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-05T16:50:49.271Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-05T16:50:49.271Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MyPortfolio\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
@@ -368,8 +363,7 @@
               "RelativeToolTip": "Controllers\\HomeController.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T16:53:20.457Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-05T16:53:20.457Z"
             },
             {
               "$type": "Document",
@@ -385,32 +379,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 2,
               "Title": "_Footer.cshtml",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MyPortfolio\\Views\\Shared\\_Footer.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Footer.cshtml",
               "ToolTip": "C:\\Users\\user\\source\\repos\\MyPortfolio\\Views\\Shared\\_Footer.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Footer.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAC4AAABfAAAAAAAAAA==",
+              "ViewState": "AgIAACkAAAAAAAAAAAAUwDkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-07T14:58:18.572Z"
+              "WhenOpened": "2025-07-07T14:58:18.572Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MyPortfolio\\appsettings.Development.json",
               "RelativeDocumentMoniker": "appsettings.Development.json",
               "ToolTip": "C:\\Users\\user\\source\\repos\\MyPortfolio\\appsettings.Development.json",
               "RelativeToolTip": "appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-07-05T17:34:08.095Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MyPortfolio\\Views\\Contact\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Contact\\Index.cshtml",
@@ -418,12 +413,11 @@
               "RelativeToolTip": "Views\\Contact\\Index.cshtml",
               "ViewState": "AgIAADQAAACAMzMzMzMLwCgAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-05T16:51:25.892Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-05T16:51:25.892Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MyPortfolio\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
@@ -431,12 +425,11 @@
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAIAAAAANDMzMzMbwA0AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-05T16:56:04.536Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-05T16:56:04.536Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Project.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\MyPortfolio\\Models\\Project.cs",
               "RelativeDocumentMoniker": "Models\\Project.cs",
@@ -444,8 +437,7 @@
               "RelativeToolTip": "Models\\Project.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-05T17:24:41.577Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-05T17:24:41.577Z"
             },
             {
               "$type": "Document",
@@ -455,7 +447,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\user\\source\\repos\\MyPortfolio\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAAAD0AAABVAAAAAAAAAA==",
+              "ViewState": "AgIAAIAAAAAAMDMzMzMLwIsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-05T17:30:57.36Z",
               "EditorCaption": ""
