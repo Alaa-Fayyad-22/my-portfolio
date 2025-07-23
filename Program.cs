@@ -112,25 +112,25 @@ namespace MyPortfolio
                     }
 
                     // Seed Projects if table is empty
-                    if (!context.Projects.Any())
-                    {
-                        context.Projects.AddRange(
-                            new MyPortfolio.Models.Project
-                            {
-                                Title = "Portfolio Website",
-                                Description = "ASP.NET Core MVC portfolio using MySQL and Bootstrap",
-                                ImageUrl = "/images/project1.jpg"
-                            },
-                            new MyPortfolio.Models.Project
-                            {
-                                Title = "E-commerce Perfume Shop",
-                                Description = "Built with Razor Pages and Stripe integration",
-                                ImageUrl = "/images/project2.jpg"
-                            }
-                        );
+                    //if (!context.Projects.Any())
+                    //{
+                    //    context.Projects.AddRange(
+                    //        new MyPortfolio.Models.Project
+                    //        {
+                    //            Title = "Portfolio Website",
+                    //            Description = "ASP.NET Core MVC portfolio using MySQL and Bootstrap",
+                    //            ImageUrl = "/images/project1.jpg"
+                    //        },
+                    //        new MyPortfolio.Models.Project
+                    //        {
+                    //            Title = "E-commerce Perfume Shop",
+                    //            Description = "Built with Razor Pages and Stripe integration",
+                    //            ImageUrl = "/images/project2.jpg"
+                    //        }
+                    //    );
 
-                        context.SaveChanges();
-                    }
+                    //    context.SaveChanges();
+                    //}
                 }
                 catch (Exception ex)
                 {
