@@ -63,6 +63,8 @@ namespace MyPortfolio
                 await next();
             });
 
+            app.MapGet("/health", () => Results.Ok("Healthy!"));
+
 
 
             app.UseStaticFiles(new StaticFileOptions

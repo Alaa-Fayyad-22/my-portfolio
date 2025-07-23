@@ -387,8 +387,7 @@
               "RelativeToolTip": "Views\\Shared\\_Footer.cshtml",
               "ViewState": "AgIAACkAAAAAAAAAAAAUwDkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-07-07T14:58:18.572Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-07T14:58:18.572Z"
             },
             {
               "$type": "Document",
@@ -398,7 +397,7 @@
               "RelativeDocumentMoniker": "appsettings.Development.json",
               "ToolTip": "C:\\Users\\user\\source\\repos\\MyPortfolio\\appsettings.Development.json",
               "RelativeToolTip": "appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAACyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-07-05T17:34:08.095Z",
               "EditorCaption": ""
@@ -447,7 +446,7 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\user\\source\\repos\\MyPortfolio\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAIAAAAAAMDMzMzMLwIsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAMTMzMzMbwEEAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-05T17:30:57.36Z",
               "EditorCaption": ""
