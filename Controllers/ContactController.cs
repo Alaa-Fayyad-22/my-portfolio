@@ -4,6 +4,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using MyPortfolio.Data;
 using MyPortfolio.Models;
+using MyPortfolio.Services;
+
 
 public class ContactController : Controller
 {
@@ -34,7 +36,7 @@ public class ContactController : Controller
 
         try
         {
-            await emailService.SendEmailAsync(model.Name, model.Email, model.Message);
+            await emailService.SendEmailAsync(model.Name, model.Email, model.Message); // pass Name and Email
             TempData["MessageSent"] = "Your message has been sent successfully!";
         }
         catch (Exception ex)
@@ -44,4 +46,5 @@ public class ContactController : Controller
 
         return RedirectToAction("Index");
     }
+
 }

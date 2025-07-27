@@ -1,65 +1,41 @@
-﻿using Microsoft.Extensions.Options;
+﻿using Microsoft.Extensions.Configuration;
 using System.Net;
 using System.Net.Mail;
 using System.Threading.Tasks;
 
-public class EmailService
+namespace MyPortfolio.Services
 {
-    private readonly IConfiguration _config;
-
-    public EmailService(IConfiguration config)
+    public class EmailService
     {
-        _config = config;
-    }
+        private readonly IConfiguration _config;
 
-    public async Task SendEmailAsync(string fromName, string fromEmail, string message)
-    {
-        var mailMessage = new MailMessage
+        public EmailService(IConfiguration config)
         {
-            From = new MailAddress(_config["EmailSettings:SenderEmail"], _config["EmailSettings:SenderName"]),
-            Subject = $"New Contact Message from {fromName}",
-            Body = $"From: {fromName} ({fromEmail})\n\n{message}",
-            IsBodyHtml = false
-        };
-
-        // Receiver: your business email
-        mailMessage.To.Add(_config["EmailSettings:ReceiverEmail"]);
-
-        // Reply-To: user who sent the message
-        mailMessage.ReplyToList.Add(new MailAddress(fromEmail));
-
-        // Validate and add ReplyTo only if fromEmail is valid
-        if (!string.IsNullOrWhiteSpace(fromEmail))
-        {
-            try
-            {
-                mailMessage.ReplyToList.Add(new MailAddress(fromEmail));
-            }
-            catch (FormatException)
-            {
-                // Optionally handle invalid email format here
-                throw new ArgumentException("Invalid sender email format.");
-            }
+            _config = config;
         }
 
-        // Validate and add To address
-        string toEmail = _config["EmailSettings:ReceiverEmail"]; // or SenderEmail if same
-        if (string.IsNullOrWhiteSpace(toEmail))
+        public async Task SendEmailAsync(string userName, string userEmail, string message)
         {
-            throw new ArgumentException("Receiver email address is not configured.");
+            var settings = _config.GetSection("EmailSettings");
+
+            using (var client = new SmtpClient(settings["SmtpServer"], int.Parse(settings["Port"])))
+            {
+                client.EnableSsl = true;
+                client.Credentials = new NetworkCredential(settings["Username"], settings["Password"]);
+
+                var mail = new MailMessage
+                {
+                    From = new MailAddress(settings["SenderEmail"], settings["SenderName"]),
+                    Subject = $"New Contact Message from {userName}",
+                    Body = $"Sender: {userName} ({userEmail})\n\nMessage:\n{message}",
+                    IsBodyHtml = false,
+                };
+
+                mail.ReplyToList.Add(new MailAddress(userEmail, userName));
+                mail.To.Add(settings["ReceiverEmail"]);
+
+                await client.SendMailAsync(mail);
+            }
         }
-        mailMessage.To.Add(toEmail);
-
-        var smtpClient = new SmtpClient(_config["EmailSettings:SmtpServer"])
-        {
-            Port = int.Parse(_config["EmailSettings:Port"]),
-            Credentials = new NetworkCredential(
-                _config["EmailSettings:Username"],
-                _config["EmailSettings:Password"]
-            ),
-            EnableSsl = true
-        };
-
-        await smtpClient.SendMailAsync(mailMessage);
     }
 }

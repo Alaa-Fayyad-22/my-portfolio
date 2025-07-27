@@ -12,7 +12,7 @@ namespace MyPortfolio
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            builder.Services.AddScoped<EmailService>();
+            builder.Services.AddScoped<Services.EmailService>();
 
             builder.Services.AddControllersWithViews();
 
